@@ -6,7 +6,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "node src/js/joker.js",
-    "format": "prettier -w src/js/joker.js"
+    "format": "prettier -w src/js/joker.js",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -25,10 +26,15 @@
   },
   "homepage": "https://github.com/Teitrheim/environment#readme",
   "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
     "prettier": "^3.1.1"
   },
   "dependencies": {
     "example-joker": "^0.0.4",
     "give-me-a-joke": "^0.3.2"
+  },
+  "lint-staged": {
+    "*.js": "prettier --write"
   }
 }
