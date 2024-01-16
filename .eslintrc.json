@@ -1,12 +1,11 @@
 {
   "env": {
     "browser": true,
-    "es2021": true,
-    "es6": true
+    "es2023": true
   },
   "extends": "eslint:recommended",
   "parserOptions": {
-    "ecmaVersion": 6, // or higher
+    "ecmaVersion": 2023, // or higher
     "sourceType": "module"
   },
   "rules": {}
